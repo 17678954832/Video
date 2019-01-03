@@ -1,0 +1,1 @@
+INSERT INTO `t_user` (`id`, `create_time`, `create_user`, `levles`, `pass_word`, `phone`, `remark`, `sex`, `status`, `update_time`, `update_user`, `user_name`) VALUES (1, NULL, NULL, NULL, 'root', NULL, NULL, NULL, 0, NULL, NULL, 'admin');

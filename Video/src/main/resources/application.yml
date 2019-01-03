@@ -1,0 +1,42 @@
+#端口
+server:
+  port: 8080
+  servlet:
+    context-path: /
+#jsp   
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+      
+      
+#数据库配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/video?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: "123456"
+
+#是JDK 5.0注解或XML描述对象－关系表的映射关系，并将运行期的实体对象持久化到数据库中    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+#HTML支持    
+  thymeleaf:
+    cache: false
+    
+#mybatis 实体类位置和xml文件检索
+mybatis:
+  type-aliases-package: com.project.Entity
+  mapper-locations:
+    classpath:/mapper/*.xml     
+    
+      
+    
+
+      
+      
+     
+      
